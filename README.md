@@ -1,4 +1,4 @@
-<p align="center"><a href=""><img src="app/images/logo.png" title="logo" alt="logo" height="100px" ></a></p>
+<p align="center"><a href="#"><img src="app/images/logo.png" title="logo" alt="logo" height="100px" ></a></p>
 
 # AliceInBeautyland
 
@@ -21,12 +21,12 @@ The public area consists of:
 ### Home
 The home page serves as the main page of the website, providing essenntial information about the beauty center.
 
-![home gif](UI-photos/home.gif)
+<a>![home gif](UI-photos/home.gif)</a>
 
 ### Shop
 The shop page displays all products available for purchase on the website. It also allows users to use search filters to find desired products.
 
-![shop gif](UI-photos/shop.gif)
+<a href="#">![shop gif](UI-photos/shop.gif)</a>
 
 From the shop, you can also see the details of a product and write a review.
 
