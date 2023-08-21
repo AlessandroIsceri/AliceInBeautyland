@@ -1,0 +1,51 @@
+/*checkbox vecchia*/
+.checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/*custom checkbox */
+.checkmark {
+    margin-left:0.5vh;
+    margin-top:0.5vh;
+    position: absolute;
+    height: 3vh;
+    width: 3vh;
+    background-color: #eee;
+}
+
+/* hover, cambia colore sfondo */
+.checkContainer:hover input ~ .checkmark {
+    background-color: #ffd4f4;
+}
+
+/* checkbox checked */
+.checkContainer input:checked ~ .checkmark {
+    background-color: #ff33cc;
+}
+
+/* checkmark nascosto */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* checkmark visibile */
+.checkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* checkmark */
+.checkContainer .checkmark:after {
+    margin-left:25%;
+    width: 1.2vh;
+    height: 2.5vh;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

@@ -1,0 +1,147 @@
+.container{
+    text-align:center;
+    height:80%;
+    background-color:white;
+    border-radius: 25px;
+    /*border: 2px solid black;*/
+    position: relative;
+    box-shadow:
+         0 8px 7px -10px #ff33cc,
+         0 -8px 7px -10px  #ff33cc,
+         8px 0 7px -10px  #ff33cc,
+         -8px 0 7px -10px  #ff33cc;
+    border-radius: 10px;
+}
+input[type=text],input[type=password],input[type=email],input[type=number] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+    width: 100%;
+    position:relative;
+}
+.label{
+    position:absolute;
+    left:3%;
+    bottom:0%;
+    z-index:1;
+}
+@keyframes animazione {
+    0%   {bottom:0;}
+    100% {bottom:70%;}
+  }
+@keyframes animazioneInversa {
+    0%   {bottom:70%;}
+    100% {bottom:0%;}
+  }
+
+input[type=text]:focus,input[type=password]:focus,input[type=email]:focus,input[type=number]:focus
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+#registrati{
+    border-radius: 25px;
+    color: black;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    position: relative;
+    border : 2px solid black;
+    background-color: white;
+    width:70%;
+}
+#registrati:hover,
+#registrati:focus-within{
+    color: white;
+    border : 2px solid #ff33cc;
+    background-color: #ff33cc;
+}
+
+body{
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url("../../../images/backgrounds/sfondoLogin.jpg");
+	min-width: 100%;
+	min-height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.occhio{
+    background:transparent;
+}
+
+
+/*rimuove bordo blu in autocomplete*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+/*animazione bottone del piu*/
+.image {
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+/*checkbox vecchia*/
+.checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/*custom checkbox */
+.checkmark {
+    margin-left:0.5vh;
+    margin-top:0.5vh;
+    position: absolute;
+    height: 3vh;
+    width: 3vh;
+    background-color: #eee;
+}
+
+/* hover, cambia colore sfondo */
+.checkContainer:hover input ~ .checkmark {
+    background-color: #ffd4f4;
+}
+
+/* checkbox checked */
+.checkContainer input:checked ~ .checkmark {
+    background-color: #ff33cc;
+}
+
+/* checkmark nascosto */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* checkmark visibile */
+.checkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* checkmark */
+.checkContainer .checkmark:after {
+    margin-left:25%;
+    width: 1.2vh;
+    height: 2.5vh;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

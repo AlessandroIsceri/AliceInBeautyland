@@ -1,0 +1,72 @@
+html,body {
+    padding:0;
+    margin:0;
+    height:100%;
+    min-height:100%;
+}
+.quarter{
+    width:50%;
+    height:100%;
+    float:left;
+    border:3px solid white;
+}
+.contents{
+    height:50%;
+    width:100%;
+}
+.sfondo{
+    z-index: 0;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+}
+.scritte{
+    text-align:center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:3vh;
+    color: white;
+    text-shadow: -1px -1px 1px #ff33cc;
+    font-weight: bold;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+}
+.quarter:hover > .scritte,
+.quarter:focus-within > .scritte{
+    color: white;
+    animation: ingrandisci 1s ease forwards;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    /*ombra testo per rendero più leggibile */
+    text-shadow: -1px -1px 1px #ff33cc;
+}
+.quarter:hover > img,
+.quarter:focus-within > img {
+    opacity:0.7;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+@keyframes ingrandisci {
+    0%   {font-size:3vh;}
+    100% {font-size:5vh;}
+} 
+#animato{
+    background: linear-gradient(45deg, #ff33cc 50%, transparent 50%) right;
+    background-size: 400%;
+    transition: 1s ease-out;
+}
+/*Bottone fissa ora un appuntamento*/
+#animato:hover,
+#animato:focus-within {
+    color: white;
+    border : 2px solid #ff33cc;
+    /*background-color: #ff33cc;*/
+    background-position: left;
+}

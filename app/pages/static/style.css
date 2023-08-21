@@ -1,0 +1,90 @@
+/*Bottone fissa ora un appuntamento*/
+.bottoneHome:hover,
+.bottoneHome:focus-within {
+    color: white;
+    border : 2px solid #ff33cc;
+    /*background-color: #ff33cc;*/
+    background-position: left;
+}
+.bottoneHome{
+  color: black;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  position: relative;
+  border : 2px solid black;
+  background-color: white;
+  position: relative;
+  background: linear-gradient(45deg, #ff33cc 50%, white 50%) right;
+  background-size: 400%;
+  transition: 1s ease-out;
+}
+.bottoneIcona:hover,
+.bottoneIcona:focus-within {
+    color: white;
+    border : 2px solid #ff33cc;
+    background-color: #ff33cc;
+}
+.bottoneIcona:hover > .fa{
+    color:white !important;
+}
+.bottoneIcona{
+  color: black;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  position: relative;
+  border : 2px solid #ff33cc;
+  background-color: white;
+}
+@keyframes spin 
+{   
+    0% {
+        -webkit-transform: rotate(0deg); 
+        transform:rotate(0deg); 
+    }
+    100% { 
+        -webkit-transform: rotate(225deg); 
+        transform:rotate(225deg); 
+    }
+}
+@keyframes reverseSpin 
+{   
+    0% {
+        -webkit-transform: rotate(225deg); 
+        transform:rotate(225deg); 
+    }
+    100% { 
+        -webkit-transform: rotate(0deg); 
+        transform:rotate(0deg); 
+    }
+}
+
+
+#carosello:hover > .carousel-item > img {
+    animation: opacita 1s ease forwards;
+}
+
+#carosello:hover > .infoNascoste{
+    display:unset;
+    animation: compari 1s ease forwards;
+}
+
+.infoNascoste{
+    display:none;
+    color:white;
+    position:absolute;
+    top:100%;
+    height:100%;
+    width:100%;
+    text-align: center;
+}
+
+@keyframes opacita {
+    100% {
+       opacity:0.4;
+    }
+ }
+ @keyframes compari {
+    100% {
+       top:35%;
+    }
+ }
