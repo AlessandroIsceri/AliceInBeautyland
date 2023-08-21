@@ -7,23 +7,26 @@
 The aim of the application is to enable potential clients to register an account in order to buy products or book an appointment at the center.
 
 The application is divided into two main parts:
-* Public area (visible ti everyone)
-* Private admin area (visible only to privileged accounts) 
+
+* [Public area](#public-area) (visible to everyone)
+* [Private admin area](#reserved-area) (visible only to privileged accounts)
 
 ## Public area
 
 The public area consists of:
-* Home
-* Shop
-* Bookings
-* Login
+* [Home](#home)
+* [Shop](#shop)
+* [Bookings](#bookings)
+* [Login](#login)
 
 ### Home
+
 The home page serves as the main page of the website, providing essenntial information about the beauty center.
 
 <a href="#">![home gif](UI-photos/home.gif)</a>
 
 ### Shop
+
 The shop page displays all products available for purchase on the website. It also allows users to use search filters to find desired products.
 
 <a href="#">![shop gif](UI-photos/shop.gif)</a>
@@ -47,10 +50,10 @@ This simple login page allows clients to register a new account or log into an e
 ## Reserved area
 
 The reserved area consists of:
-* Manage shop
-* Manage bookings
-* Analytics
-* Reviews
+* [Manage shop](#manage-shop-and-bookings)
+* [Manage bookings](#manage-shop-and-bookings)
+* [Reviews](#reviews)
+* [Analytics](#analytics)
 
 ### Manage shop and bookings
 
