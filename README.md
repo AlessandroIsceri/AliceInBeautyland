@@ -1,4 +1,4 @@
-<p align="center"><a href="#"><img src="app/images/logo.png" title="logo" alt="logo" height="100px" ></a></p>
+<p align="center"><a href=""><img src="app/images/logo.png" title="logo" alt="logo" height="100px" ></a></p>
 
 # AliceInBeautyland
 
