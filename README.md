@@ -21,7 +21,7 @@ The public area consists of:
 ### Home
 The home page serves as the main page of the website, providing essenntial information about the beauty center.
 
-<a>![home gif](UI-photos/home.gif)</a>
+<a href="#">![home gif](UI-photos/home.gif)</a>
 
 ### Shop
 The shop page displays all products available for purchase on the website. It also allows users to use search filters to find desired products.
